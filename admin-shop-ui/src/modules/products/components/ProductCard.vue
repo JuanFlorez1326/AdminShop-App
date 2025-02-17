@@ -1,5 +1,5 @@
 <template>
-    <article
+  <article
     class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300"
   >
     <a href="#">
@@ -7,6 +7,7 @@
         <img
           :src="product.images[0]"
           :alt="product.title"
+          class="h-[250px] object-cover"
         />
       </div>
 
@@ -44,10 +45,10 @@
 </template>
 
 <script lang="ts" setup>
-import type { Product } from '../interfaces/product.interface';
+import type { Product } from "../interfaces/product.interface";
 
 interface Props {
-    product: Product
+  product: Product;
 }
 
 defineProps<Props>();

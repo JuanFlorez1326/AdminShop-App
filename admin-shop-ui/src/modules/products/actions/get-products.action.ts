@@ -4,7 +4,7 @@ import { getProductImageAction } from './get-product-image.action';
 
 export const getProductsAction = async (
   page: number = 1,
-  limit: number = 10,
+  limit: number = 12,
 ) => {
   try {
     const { data } = await adminShopApi.get<Product[]>(
